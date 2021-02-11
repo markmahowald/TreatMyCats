@@ -18,6 +18,10 @@ namespace EmberAndArtimis.Models.MockRepos
 
         private void MockupSomeData(int numberOfMocks)
         {
+            if(this.MockedUpCatPictures is null)
+            {
+                this.MockedUpCatPictures = new List<GlamorousCatPicture>();
+            }
             this.MockedUpCatPictures = new List<GlamorousCatPicture>();
             for (int i = 0; i < numberOfMocks; i++)
             {
@@ -25,10 +29,22 @@ namespace EmberAndArtimis.Models.MockRepos
                 {
                     Id = i,
                     Name = $"GlamorousCatPic{i}",
-                    Description = $"Mocked up catPicture number{i}"
+                    Description = $"Mocked up catPicture number{i}",
+                    CategoryId = (i%3)
                 };
                 this.MockedUpCatPictures.Add(pic);
+
             }
+        }
+
+        private void PlaceInCategory(List<GlamorousCatPicture> pics, CategoryMockRepository categoryRepo)
+        {
+            List<Category> allCatagories = categoryRepo.GetAll().ToList();
+            for (int i = 0; i < pics.Count; i++)
+            {
+                pics[i].Category = allCatagories[allCatagories.Count % (i + 1)];
+            }
+
         }
 
         public GlamorousCatPictureMockRepository()

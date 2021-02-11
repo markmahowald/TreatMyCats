@@ -15,6 +15,10 @@ namespace EmberAndArtimis.Models.MockRepos
 
         private void MockupSomeData(int numberOfMocks)
         {
+            if (this.MockedUpCategories == null)
+            {
+                this.MockedUpCategories = new List<Category>();
+            }
             for (int i = 0; i < numberOfMocks; i++)
             {
                 this.MockedUpCategories.Add(
@@ -30,6 +34,7 @@ namespace EmberAndArtimis.Models.MockRepos
 
         public CategoryMockRepository()
         {
+
             this.MockupSomeData(5);
         }
 

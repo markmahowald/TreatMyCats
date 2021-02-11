@@ -1,0 +1,20 @@
+﻿@model IEnumerable<EmberAndArtimis.Models.GlamorousCatPicture>
+
+<html>
+<head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+
+</head>
+<body>
+    @foreach (var catPic in Model)
+    {
+        <div>
+            <h2>@catPic.Name</h2>
+            <h3>@catPic.Description</h3>
+            <h4>@catPic.Category.Name</h4>
+        </div>
+    }
+</body>
+</html>

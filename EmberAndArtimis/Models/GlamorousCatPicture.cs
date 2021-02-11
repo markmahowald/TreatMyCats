@@ -10,6 +10,7 @@ namespace EmberAndArtimis.Models
 
         //to fit with a tutorial I am adding a category
         public Category Category { get; set; }
+        public int CategoryId { get; set; }
 
         public GlamorousCatPicture()
         {
