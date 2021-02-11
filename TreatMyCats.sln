@@ -15,11 +15,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{7575F8
 		Images\Cats.jpg = Images\Cats.jpg
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmberAndArtimis", "EmberAndArtimis\EmberAndArtimis.csproj", "{EFDE8E9A-AEA5-4AF0-B481-451D7E82D5AA}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AEBCD24F-F192-4A80-A1AF-81ECC31CC37A}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFDE8E9A-AEA5-4AF0-B481-451D7E82D5AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDE8E9A-AEA5-4AF0-B481-451D7E82D5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDE8E9A-AEA5-4AF0-B481-451D7E82D5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDE8E9A-AEA5-4AF0-B481-451D7E82D5AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
